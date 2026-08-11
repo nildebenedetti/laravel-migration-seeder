@@ -34,10 +34,10 @@ Home
                     <td>{{ $train->arrival_station }}</td>
                     <td>{{ $train->arrival_time }}</td>
                     <td>{{ $train->status }}</td>
-                    <td>{{ $train->status === 'delayed' ? $train->delay_minutes . ' mins' : '-' }}</td>
+                    <td>{{ $train->status === 'delayed' || $train->status === 'early' ? $train->delay_minutes . ' mins' : '-' }}</td>
                 </tr>    
             @endforeach
         </tbody>
     </table>
-</div>s
+</div>
 @endsection
