@@ -13,6 +13,7 @@ Home
             <th scope="col">#</th>
             <th scope="col">Train Code</th>
             <th scope="col">Operating Company</th>
+            <th scope="col">Schedule Date</th>
             <th scope="col">Departure Station</th>
             <th scope="col">Departure Time</th>
             <th scope="col">Arrival Station</th>
@@ -27,6 +28,7 @@ Home
                     <th scope="row">{{ $loop->iteration }}</th>
                     <td>{{ $train->train_code }}</td>
                     <td>{{ $train->company }}</td>
+                    <td>{{ $train->next_planned }}</td>
                     <td>{{ $train->departure_station }}</td>
                     <td>{{ $train->departure_time }}</td>
                     <td>{{ $train->arrival_station }}</td>
