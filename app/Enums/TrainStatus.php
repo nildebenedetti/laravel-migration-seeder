@@ -10,3 +10,5 @@ enum TrainStatus: string
     case CANCELLED = 'cancelled';
     case EARLY = 'early';
 }
+
+
