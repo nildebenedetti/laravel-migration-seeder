@@ -1,11 +1,32 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+body {
+    background-color: #9C3D27;
+}
+
+/*==== NAVBAR ====*/
+
 .navbar {
     background: linear-gradient(to right, #f2a257, #CF4B5F, #42406E);
 }
 
-body {
-    background-color: #9C3D27;
+
+/* Header Navbar e Titoli di Sezione (Stile Stazione) */
+.navbar,
+.tt-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*==== HERO ====*/
+
+.hero-banner h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hero-banner {
@@ -14,9 +35,6 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 370px;
-
-    
-  /* Il padding e Flexbox gestiscono lo spazio senza altezze fisse */
     padding: 30px 30px;
     display: flex;
     justify-content: flex-start;
@@ -27,7 +45,7 @@ body {
     color: white;
 }
 
-/* Font Share Tech Mono su tabella e orari */
+/*==== TABLE ====*/
 .tt-table-wrapper, 
 .tt-title {
     font-family: 'Share Tech Mono', monospace;
@@ -84,3 +102,4 @@ body {
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+

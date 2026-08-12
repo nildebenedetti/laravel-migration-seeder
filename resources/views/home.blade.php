@@ -8,10 +8,10 @@ Home
 <div class="hero-banner">
     <h2>Welcome to the Train Station</h2>
 </div>
-<div class="container my-4">
+<div class="container-fluid my-4">
     <h1 class="tt-title mb-3">Trains Timetable</h1>
     <div class="table-responsive tt-table-wrapper rounded-3 shadow-lg">
-        <table class="table table-dark table-hover align-middle mb-0">
+        <table class="table table-dark table-hover align-middle mb-0 PY-1">
             <thead>
                 <tr>
                 <th scope="col">#</th>
