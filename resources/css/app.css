@@ -26,3 +26,61 @@ body {
 .hero-banner h2 {
     color: white;
 }
+
+/* Font Share Tech Mono su tabella e orari */
+.tt-table-wrapper, 
+.tt-title {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Contenitore tabella stile vetro opaco / Twilight */
+.tt-table-wrapper {
+    background: rgba(30, 15, 25, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 180, 120, 0.2);
+}
+
+/* Rimuove lo sfondo di default di Bootstrap */
+.tt-table-wrapper .table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #fce4ec;
+    margin-bottom: 0;
+}
+
+/* Intestazione della tabella con tonalità ramata/tramonto */
+.tt-table-wrapper thead th {
+    background-color: rgba(90, 35, 45, 0.8) !important;
+    color: #ffb74d;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff9800;
+    white-space: nowrap;
+    padding: 1rem 0.75rem;
+}
+
+/* Celle e righe */
+.tt-table-wrapper td, 
+.tt-table-wrapper th {
+    white-space: nowrap;
+    padding: 0.85rem 0.75rem;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Effetto Hover stile stazioni ferroviarie */
+.tt-table-wrapper tbody tr:hover {
+    background-color: rgba(255, 152, 0, 0.15) !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Risalto agli orari e status */
+.tt-time {
+    color: #ffd54f;
+    font-weight: bold;
+}
+
+.status-scheduled {
+    color: #81c784;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}

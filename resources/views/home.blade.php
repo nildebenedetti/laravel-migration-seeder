@@ -8,10 +8,10 @@ Home
 <div class="hero-banner">
     <h2>Welcome to the Train Station</h2>
 </div>
-<div class="text-light p-5">
-    <h1 class="mb-3">Trains Timetable</h1>
-    <div class="table-responsive">
-        <table class="table">
+<div class="container my-4">
+    <h1 class="tt-title mb-3">Trains Timetable</h1>
+    <div class="table-responsive tt-table-wrapper rounded-3 shadow-lg">
+        <table class="table table-dark table-hover align-middle mb-0">
             <thead>
                 <tr>
                 <th scope="col">#</th>
@@ -30,7 +30,7 @@ Home
                 @foreach ($trains as $train)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
-                        <td>{{ $train->train_code }}</td>
+                        <td><span class="badge bg-warning text-dark">{{ $train->train_code }}</span></td>
                         <td>{{ $train->company }}</td>
                         <td>{{ $train->next_planned }}</td>
                         <td>{{ $train->departure_station }}</td>
