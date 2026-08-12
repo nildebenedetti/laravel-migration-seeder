@@ -1,1 +1,28 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+    background: linear-gradient(to right, #f2a257, #CF4B5F, #42406E);
+}
+
+body {
+    background-color: #9C3D27;
+}
+
+.hero-banner {
+    background-image: url('https://kh.wiki.gallery/images/thumb/9/91/Train_Station_%28Art%29.png/1600px-Train_Station_%28Art%29.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 370px;
+
+    
+  /* Il padding e Flexbox gestiscono lo spazio senza altezze fisse */
+    padding: 30px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-banner h2 {
+    color: white;
+}
